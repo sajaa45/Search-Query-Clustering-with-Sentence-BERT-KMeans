@@ -4,7 +4,7 @@ import time
 import os
 
 
-#3:extract
+#1:extract
 def extract_data(file_path="dataset.csv"):
     print("Extracting data...")
     df = pd.read_csv(file_path)
@@ -70,11 +70,40 @@ def load_data_incremental(df, output_file="translated_queries.csv", delay=1.0):
     return output_file
 
 
+#4: remove duplicates from translated dataset
+def remove_translated_duplicates(input_file="translated_queries.csv", output_file="cleaned_translated_queries.csv"):
+    # Remove duplicates from the translated dataset
+    print("Removing duplicates from translated dataset...")
+    
+    # Read the translated data
+    df = pd.read_csv(input_file)
+    print(f"Original translated dataset: {len(df)} rows")
+    
+    # Remove duplicate queries
+    df_clean = df.drop_duplicates(subset=['query'])
+    
+    # Save cleaned data
+    df_clean.to_csv(output_file, index=False)
+    
+    print(f"Removed {len(df) - len(df_clean)} duplicate queries")
+    print(f"Cleaned dataset: {len(df_clean)} rows remaining")
+    print(f"Saved cleaned data to {output_file}")
+    
+    return output_file
+
 
 def main():
-     df = extract_data("dataset.csv")
-     df = transform_data(df)
-     load_data_incremental(df, "translated_queries.csv", delay=1.0)
+    # Step 1: Extract original data
+    df = extract_data("dataset.csv")
+    
+    # Step 2: Transform original data
+    df = transform_data(df)
+    
+    # Step 3: Translate and save
+    load_data_incremental(df, "translated_queries.csv", delay=1.0)
+    
+    # Step 4: Remove duplicates from translated data
+    remove_translated_duplicates("translated_queries.csv", "translated_queries.csv")
     
 
 if __name__ == "__main__":
