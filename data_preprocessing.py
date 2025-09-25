@@ -111,16 +111,16 @@ def lowercase_queries(input_file="translated_queries.csv", output_file="lowercas
 
 def main():
     # Step 1: Extract original data
-    #df = extract_data("dataset.csv")
+    df = extract_data("dataset.csv")
     
     # Step 2: Transform original data
-    #df = transform_data(df)
+    df = transform_data(df)
     
     # Step 3: Translate and save
-    #load_data_incremental(df, "translated_queries.csv", delay=1.0)
+    load_data_incremental(df, "translated_queries.csv", delay=1.0)
     
     # Step 4: Remove duplicates from translated data
-    #remove_translated_duplicates("translated_queries.csv", "translated_queries.csv")
+    remove_translated_duplicates("translated_queries.csv", "translated_queries.csv")
     
     # Step 5: Convert to lowercase
     lowercase_queries("translated_queries.csv", "translated_queries.csv")
