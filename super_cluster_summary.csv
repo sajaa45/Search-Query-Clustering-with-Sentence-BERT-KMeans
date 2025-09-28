@@ -1,0 +1,21 @@
+Super_Cluster_ID,Super_Cluster_Name,Total_Queries,Sub_Clusters_Count,Sub_Clusters
+0.0,Projector,19,1,['projector']
+1.0,Gifts,789,9,"['guitar', 'coin', 'wallet', 'stone', 'earrings', 'keychain', 'gifts', 'wall', 'flowers']"
+2.0,Paper,168,5,"['tape', 'printer', 'poster', 'paper', 'toilet']"
+3.0,Chair,892,7,"['mat', 'bed', 'pillow', 'frame', 'wood', 'box', 'chair']"
+4.0,Funko,20,1,['funko']
+5.0,Magnetic,41,2,"['car', 'magnetic']"
+6.0,Hair,2188,11,"['sand', 'nail', 'wax', 'paint', 'massager', 'silicone', 'tea', 'bath', 'shampoo', 'mask', 'hair']"
+7.0,Camera,142,2,"['drive', 'camera']"
+8.0,Watch,145,2,"['watch', 'strap']"
+9.0,Seat,18,1,['seat']
+10.0,Mirror,35,1,['mirror']
+11.0,Sewing,38,2,"['yarn', 'sewing']"
+12.0,Desk,17,1,['desk']
+13.0,Hose,19,1,['hose']
+14.0,Bike,362,6,"['helmet', 'knife', 'roller', 'accessories', 'bike', 'lego']"
+15.0,Women,5942,17,"['gloves', 'perfume', 'rug', 'bag', 'belt', 'headband', 'hat', 'airsoft', 'ice', 'towels', 'ball', 'dragon', 'dog', 'bra', 'women', 'eight,', 'case']"
+16.0,Case,19,1,['case']
+17.0,Clock,31,1,['clock']
+18.0,Light,439,5,"['window', 'glasses', 'fan', 'light', 'curtains']"
+19.0,Pads,32,1,['pads']
