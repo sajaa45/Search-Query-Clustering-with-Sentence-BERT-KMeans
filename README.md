@@ -24,7 +24,7 @@ The goal is to provide **insights into customer demand patterns** by leveraging 
 ---
 
 ## 📂 Repository Structure
-```
+```bash
   
   ├── download_dataset.py       # Download the dataset
   ├── data_preprocessing.py     # Clean and translate queries
