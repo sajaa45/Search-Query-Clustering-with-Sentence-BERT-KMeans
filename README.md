@@ -1,5 +1,4 @@
 
-```markdown
 # Customer Search Query Clustering Using Machine Learning
 
 This project applies **machine learning and natural language processing** techniques to analyze and cluster multilingual customer search queries.  
@@ -44,10 +43,8 @@ The goal is to provide **insights into customer demand patterns** by leveraging 
    ```bash
    git clone https://github.com/yourusername/customer-query-clustering.git
    cd customer-query-clustering
-````
 
-
-
+---
 ## ▶️ Running the Pipeline
 
 Run the following scripts in sequence:
