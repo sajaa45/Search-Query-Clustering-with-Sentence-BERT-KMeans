@@ -34,7 +34,7 @@ The goal is to provide **insights into customer demand patterns** by leveraging 
 ├── experimenting.py          # Streamlit dashboard (final output)
 └── README.md                 # Project documentation
 
-````
+```
 
 ---
 
@@ -108,5 +108,4 @@ The dashboard enables **interactive exploration** of query clusters:
 **Saja Moussa**
 IT & BA student | ML & AI Enthusiast
 
-```
 
