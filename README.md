@@ -25,16 +25,16 @@ The goal is to provide **insights into customer demand patterns** by leveraging 
 
 ## 📂 Repository Structure
 ```
+  
+  ├── download_dataset.py       # Download the dataset
+  ├── data_preprocessing.py     # Clean and translate queries
+  ├── compare.py                # Comparative analysis (before vs. after preprocessing)
+  ├── load_model.py             # Generate embeddings with Sentence-BERT
+  ├── clustering.py             # Perform clustering (HDBSCAN + KMeans)
+  ├── experimenting.py          # Streamlit dashboard (final output)
+  └── README.md                 # Project documentation
 
-├── download_dataset.py       # Download the dataset
-├── data_preprocessing.py     # Clean and translate queries
-├── compare.py                # Comparative analysis (before vs. after preprocessing)
-├── load_model.py             # Generate embeddings with Sentence-BERT
-├── clustering.py             # Perform clustering (HDBSCAN + KMeans)
-├── experimenting.py          # Streamlit dashboard (final output)
-└── README.md                 # Project documentation
-
-```
+````
 
 ---
 
